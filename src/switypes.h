@@ -14,9 +14,16 @@ public:
 class SwiInt : public SwiTerm
 {
 public:
-    SwiInt(int integer);
-    SwiInt(long integer);
+    SwiInt(int number);
+    SwiInt(long number);
     virtual ~SwiInt();
+};
+
+class SwiFloat : public SwiTerm
+{
+    SwiFloat(float number);
+    SwiFloat(double number);
+    virtual ~SwiFloat();
 };
 
 #endif //SWITYPES_H
