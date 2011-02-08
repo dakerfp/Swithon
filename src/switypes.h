@@ -1,6 +1,6 @@
 
-#ifndef SWIATOM_H
-#define SWIATOM_H
+#ifndef SWITYPES_H
+#define SWITYPES_H
 
 #include "switerm.h"
 
@@ -19,4 +19,4 @@ public:
     virtual ~SwiInt();
 };
 
-#endif //SWIATOM_H
+#endif //SWITYPES_H

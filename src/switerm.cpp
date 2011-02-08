@@ -1,6 +1,6 @@
 
 #include "switerm.h"
-#include "swiatom.h"
+#include "switypes.h"
 
 SwiTerm::SwiTerm()
 {

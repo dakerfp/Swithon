@@ -4,7 +4,7 @@ CC=g++
 CFLAGS=-Wall
 LIBS=
 
-build: switerm swiatom swithon
+build: switerm switypes swithon
 	$(CC) $(INCLUDES) $(CFLAGS) $(LIBS) *.o -o swithon
 
 swithon:
@@ -13,5 +13,5 @@ swithon:
 switerm:
 	$(CC) $(INCLUDES) $(CFLAGS) $(LIBS) switerm.cpp -c -o switerm.o
 
-swiatom:
-	$(CC) $(INCLUDES) $(CFLAGS) $(LIBS) swiatom.cpp -c -o swiatom.o
+switypes:
+	$(CC) $(INCLUDES) $(CFLAGS) $(LIBS) switypes.cpp -c -o switypes.o

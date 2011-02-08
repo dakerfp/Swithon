@@ -1,5 +1,5 @@
 
-#include "swiatom.h"
+#include "switypes.h"
 
 SwiAtom::SwiAtom(const char *atom)
     : SwiTerm()
