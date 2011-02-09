@@ -1,6 +1,5 @@
 
 #include "switerm.h"
-#include "switypes.h"
 
 SwiTerm::SwiTerm()
 {
@@ -65,6 +64,7 @@ SwiTerm *SwiTerm::create(const term_t &term)
     switch( PL_term_type(term) ) {
         // TODO add lists, strings and vars support
     case PL_ATOM:
+        break;
 
     case PL_INTEGER:
         long long_value;
@@ -98,3 +98,44 @@ SwiTerm *SwiTerm::create(const term_t &term)
 
 }
 
+SwiAtom::SwiAtom(const char *atom)
+    : SwiTerm()
+{
+    term = PL_new_atom(atom);
+}
+
+SwiAtom::~SwiAtom()
+{
+}
+
+SwiInt::SwiInt(int number)
+    : SwiTerm()
+{
+    PL_put_integer(term, number);
+}
+
+SwiInt::SwiInt(long number)
+    : SwiTerm()
+{
+    PL_put_integer(term, number);
+}
+
+SwiInt::~SwiInt()
+{
+}
+
+SwiFloat::SwiFloat(float number)
+    : SwiTerm()
+{
+    PL_put_float(term, number);
+}
+
+SwiFloat::SwiFloat(double number)
+    : SwiTerm()
+{
+    PL_put_float(term, number);
+}
+
+SwiFloat::~SwiFloat()
+{
+}
