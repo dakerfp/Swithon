@@ -9,28 +9,23 @@
 
 // Type correspondency:
 //
-//      Cpp Type | Prolog Type
-// long, int     | integer
-// float, double | float
-//         char* | atom
-//         Char* | var
-//   std::vector | list
-//    class Term | term
+//         Cpp Type | Prolog Type
+//
+//    long, int     | integer
+//    float, double | float
+//            char* | atom
+//            Char* | var
+//      std::vector | list
+// class SwiFunctor | functor
 
 
 class Swithon
 {
 public:
     Swithon();
+
+    
 };
 
-
-
-// class Swithon
-// {
-// public:
-//     Swithon();
-//     ~Swithon();
-// };
 
 #endif //SWITHON_H
